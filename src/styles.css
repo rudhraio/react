@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Create an animation that rotates the icon */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        /* Start rotation from 0 degrees */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* Rotate to 360 degrees */
+    }
+}
+
+/* Apply the animation to the icon */
+.icon-animation {
+    animation: rotate 4s linear infinite;
+    /* Rotate continuously in 4 seconds */
+}
